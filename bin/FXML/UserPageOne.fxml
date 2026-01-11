@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="963.0" stylesheets="@../CSS/UserScenes.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLControllers.UserPageOneController">
+   <children>
+      <Region layoutX="211.0" layoutY="13.0" prefHeight="616.0" prefWidth="738.0" styleClass="MidRegion" />
+      <Circle fill="WHITE" layoutX="108.0" layoutY="80.0" radius="66.0" stroke="WHITE" strokeType="INSIDE" />
+      <Line endX="95.0" layoutX="111.0" layoutY="196.0" startX="-104.0" stroke="WHITE" strokeWidth="2.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Region layoutX="228.0" layoutY="162.0" prefHeight="443.0" prefWidth="707.0" styleClass="RegionWhite" />
+      <Label fx:id="name" alignment="CENTER" layoutX="6.0" layoutY="156.0" prefHeight="39.0" prefWidth="201.0" text="Hello Bob" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="213.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="157.0" styleClass="InsideScene" text="Home" />
+      <Button fx:id="BUT2" layoutX="28.0" layoutY="267.0" mnemonicParsing="false" onAction="#Button2press" prefHeight="45.0" prefWidth="157.0" styleClass="LeftButtons" text="Information" />
+      <Button fx:id="BUT3" layoutX="28.0" layoutY="321.0" mnemonicParsing="false" onAction="#Button3press" prefHeight="45.0" prefWidth="157.0" styleClass="LeftButtons" text="Messages" />
+      <Region layoutX="225.0" layoutY="20.0" prefHeight="121.0" prefWidth="225.0" styleClass="BehindStuffRegion" />
+      <Region layoutX="710.0" layoutY="20.0" prefHeight="121.0" prefWidth="225.0" styleClass="BehindStuffRegion" />
+      <Region layoutX="464.0" layoutY="20.0" prefHeight="121.0" prefWidth="233.0" styleClass="BehindStuffRegion" />
+      <Label alignment="CENTER" layoutX="225.0" layoutY="26.0" prefHeight="39.0" prefWidth="225.0" text="Purchase count" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="468.0" layoutY="26.0" prefHeight="39.0" prefWidth="225.0" text="Spent total" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="710.0" layoutY="26.0" prefHeight="39.0" prefWidth="225.0" text="Average purchase" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount" alignment="CENTER" layoutX="225.0" layoutY="59.0" prefHeight="60.0" prefWidth="225.0" text="None" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" alignment="CENTER" layoutX="468.0" layoutY="59.0" prefHeight="60.0" prefWidth="225.0" text="None" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="average" alignment="CENTER" layoutX="710.0" layoutY="59.0" prefHeight="60.0" prefWidth="225.0" text="None" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="barChart" layoutX="225.0" layoutY="166.0" prefHeight="433.0" prefWidth="707.0" title="Brief information on user exspenses (Eur)">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="logbutton" layoutX="4.0" layoutY="594.0" mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="44.0" styleClass="LeftButtons" />
+      <ImageView fx:id="logimage" disable="true" fitHeight="45.0" fitWidth="55.0" layoutX="4.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="UserImage" fitHeight="98.0" fitWidth="102.0" layoutX="57.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="57.0" layoutY="597.0" prefHeight="36.0" prefWidth="84.0" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

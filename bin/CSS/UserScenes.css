@@ -1,0 +1,164 @@
+
+.root{
+     -fx-background-color: linear-gradient(to bottom right, #111827, #1F2937, #111827);
+}
+
+.MidRegion{
+      -fx-background-color: linear-gradient(to bottom right, #dedde4, #ecebf1, #e1e4ec);
+   -fx-border-color: white;
+   
+   /*-fx-background-color: linear-gradient(to bottom right, #1a3672, #1F2937, #555a64);*/
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+.BehindStuffRegion{
+     -fx-background-color: linear-gradient(to bottom right, #111827, #1F2937, #111827);
+     -fx-background-radius: 15px;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 2, 8);
+}
+
+.RegionWhite{
+     -fx-background-color: rgb(248, 246, 246);
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgb(202, 198, 198);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 2);
+}
+
+.MenuButton{
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.LeftButtons{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.InsideScene{
+    -fx-background-color: #2e4564;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.AddButton{
+    -fx-background-color: rgb(46, 199, 46);
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+}
+
+.AddButton:hover{
+    -fx-background-color: rgb(79, 167, 79);
+}
+.AddButton:pressed{
+    -fx-background-color: rgb(112, 223, 112);
+}
+
+
+.RemoveButton{
+    -fx-background-color: rgb(255, 60, 0);
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+}
+.RemoveButton:hover{
+    -fx-background-color: rgb(173, 45, 6);
+}
+.RemoveButton:pressed{
+    -fx-background-color: rgb(201, 125, 102);
+}
+
+.ClearButton{
+    -fx-background-color: rgb(30, 27, 224);
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+}
+.ClearButton:hover{
+    -fx-background-color: rgb(31, 29, 153);
+}
+.ClearButton:pressed{
+    -fx-background-color: rgb(100, 99, 182);
+}
+
+
+.CurrentButton{
+    -fx-background-color: rgb(30, 27, 224);
+     -fx-font-weight: bold;
+    -fx-text-fill: white;
+   
+}
+.CurrentButton:hover{
+    -fx-background-color: rgb(31, 29, 153);
+}
+.CurrentButton:pressed{
+    -fx-background-color: rgb(100, 99, 182);
+}
+
+.LeftButtons:hover{
+    -fx-background-color: #2d415c;
+}
+
+.LeftButtons:pressed{
+    -fx-background-color: #1f3046;
+}
+
+.table-view .table-cell{
+    -fx-alignment: CENTER;
+}
+
+.table-view .table-row-cell:filled:hover,
+.table-view .table-row-cell:filled:hover .table-cell {
+    -fx-background-color: #6f84f7;  
+}
+
+
+.table-view .table-row-cell:filled:selected,
+.table-view .table-row-cell:filled:selected .table-cell {
+    -fx-background-color: #bb4c2a;  
+    -fx-text-fill: white;            
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #206288;
+}
+
+
+
+.ExportButton{
+    -fx-background-color: rgb(30, 27, 224);
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+}
+
+.ExportButton:hover{
+    -fx-background-color: rgb(31, 29, 153);
+}
+.ExportButton:pressed{
+    -fx-background-color: rgb(100, 99, 182);
+}

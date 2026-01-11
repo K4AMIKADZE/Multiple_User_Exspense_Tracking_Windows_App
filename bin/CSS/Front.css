@@ -1,0 +1,70 @@
+.TextFields{
+    
+    
+    
+}
+
+.RegionsBehindStuff{
+    -fx-background-color: rgb(216, 226, 226);
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,1), 8, 0, 0, 1);
+}
+
+.LeftRegion{
+     -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #272a3a, #2c5848);
+    
+   
+    -fx-border-radius: 0 20px 20px 0;
+    -fx-background-radius: 0 20px 20px 0;
+   
+}
+
+.MidRegion{
+      -fx-background-color: linear-gradient(to bottom right, #dedde4, #ecebf1, #e1e4ec);
+   -fx-border-color: white;
+   
+   /*-fx-background-color: linear-gradient(to bottom right, #1a3672, #1F2937, #555a64);*/
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+.WhiteRegion{
+     -fx-background-color: rgba(248, 246, 246, 0.911);
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgb(202, 198, 198);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 2);
+}
+
+
+.root{
+       -fx-background-color: linear-gradient(to bottom right, #111827, #1F2937, #111827);
+}
+
+
+
+
+
+.Buttons{
+    -fx-background-color: #3cc521;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: white; 
+    
+    
+}
+.Buttons:hover{
+    -fx-background-color: rgb(103, 148, 81);
+    
+}
+.Buttons:pressed{
+    -fx-background-color: rgb(20, 71, 15)
+    
+}
+
+.hyperlink:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
