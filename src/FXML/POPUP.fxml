@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/AdminScenes.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLControllers.PopUpController">
+   <children>
+      <Region layoutX="20.0" layoutY="14.0" prefHeight="372.0" prefWidth="561.0" styleClass="MidRegion" />
+      <Region layoutX="28.0" layoutY="24.0" prefHeight="321.0" prefWidth="331.0" styleClass="RegionWhite" />
+      <Label layoutX="37.0" layoutY="29.0" prefHeight="29.0" prefWidth="91.0" text="User:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="103.0" prefHeight="29.0" prefWidth="91.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="142.0" prefHeight="29.0" prefWidth="91.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="179.0" prefHeight="29.0" prefWidth="91.0" text="Location:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="218.0" prefHeight="29.0" prefWidth="91.0" text="Currency:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="295.0" prefHeight="29.0" prefWidth="110.0" text="Transaction:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="255.0" prefHeight="29.0" prefWidth="110.0" text="Spend:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="65.0" prefHeight="29.0" prefWidth="91.0" text="Sector:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="one" layoutX="149.0" layoutY="29.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="three" layoutX="149.0" layoutY="105.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="four" layoutX="149.0" layoutY="145.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="five" layoutX="149.0" layoutY="182.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="six" layoutX="149.0" layoutY="221.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="eight" layoutX="149.0" layoutY="298.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="seven" layoutX="149.0" layoutY="258.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="two" layoutX="149.0" layoutY="68.0" prefHeight="29.0" prefWidth="209.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Region layoutX="382.0" layoutY="25.0" prefHeight="110.0" prefWidth="186.0" styleClass="BehindStuffRegion" />
+      <Region layoutX="382.0" layoutY="145.0" prefHeight="110.0" prefWidth="186.0" styleClass="BehindStuffRegion" />
+      <Region layoutX="382.0" layoutY="267.0" prefHeight="110.0" prefWidth="186.0" styleClass="BehindStuffRegion" />
+      <Label alignment="CENTER" layoutX="390.0" layoutY="32.0" prefHeight="29.0" prefWidth="173.0" text="Total spend (Eur)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="390.0" layoutY="156.0" prefHeight="29.0" prefWidth="173.0" text="AVG spend (Eur)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="390.0" layoutY="274.0" prefHeight="29.0" prefWidth="173.0" text="Total purchases" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" alignment="CENTER" layoutX="390.0" layoutY="313.0" prefHeight="43.0" prefWidth="173.0" text="NULL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="avg" alignment="CENTER" layoutX="390.0" layoutY="197.0" prefHeight="43.0" prefWidth="173.0" text="NULL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalspend" alignment="CENTER" layoutX="390.0" layoutY="76.0" prefHeight="43.0" prefWidth="173.0" text="NULL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="348.0" prefHeight="29.0" prefWidth="91.0" text="Current Date:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="DATE" layoutX="117.0" layoutY="348.0" prefHeight="29.0" prefWidth="103.0" text="NULL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="37.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="37.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="36.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="37.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="36.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="37.0" layoutY="246.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="36.0" layoutY="283.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="37.0" layoutY="323.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+   </children>
+</AnchorPane>

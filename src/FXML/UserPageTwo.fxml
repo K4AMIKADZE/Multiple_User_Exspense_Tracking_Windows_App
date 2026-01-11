@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="963.0" stylesheets="@../CSS/UserScenes.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLControllers.UserPageTwoController">
+   <children>
+      <Circle fill="WHITE" layoutX="108.0" layoutY="80.0" radius="66.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label fx:id="name" alignment="CENTER" layoutX="6.0" layoutY="156.0" prefHeight="39.0" prefWidth="201.0" text="Hello Bob" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Line endX="95.0" layoutX="111.0" layoutY="196.0" startX="-104.0" stroke="WHITE" strokeWidth="2.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Button fx:id="BUT1" layoutX="28.0" layoutY="213.0" mnemonicParsing="false" onAction="#Button1press" prefHeight="45.0" prefWidth="157.0" styleClass="LeftButtons" text="Home" />
+      <Button layoutX="28.0" layoutY="267.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="157.0" styleClass="InsideScene" text="Information" />
+      <Button fx:id="BUT3" layoutX="28.0" layoutY="321.0" mnemonicParsing="false" onAction="#Button3press" prefHeight="45.0" prefWidth="157.0" styleClass="LeftButtons" text="Messages" />
+      <Region layoutX="211.0" layoutY="13.0" prefHeight="616.0" prefWidth="738.0" styleClass="MidRegion" />
+      <Region layoutX="572.0" layoutY="481.0" prefHeight="132.0" prefWidth="357.0" styleClass="RegionWhite" />
+      <TableView fx:id="table" layoutX="223.0" layoutY="63.0" prefHeight="303.0" prefWidth="712.0" styleClass="tableview">
+        <columns>
+            <TableColumn fx:id="Id" prefWidth="76.0" text="ID" />
+          <TableColumn fx:id="date" prefWidth="116.0" text="Date" />
+          <TableColumn fx:id="type" prefWidth="128.0" text="Type" />
+            <TableColumn fx:id="locationt" prefWidth="76.0" text="Location" />
+            <TableColumn fx:id="currency" prefWidth="92.0" text="Currency" />
+            <TableColumn fx:id="transaction" prefWidth="84.0" text="Transaction" />
+            <TableColumn fx:id="spent" prefWidth="135.0" text="Spent" />
+        </columns>
+      </TableView>
+      <Region layoutX="223.0" layoutY="374.0" prefHeight="162.0" prefWidth="712.0" styleClass="RegionWhite" />
+      <TextField fx:id="search" layoutX="223.0" layoutY="24.0" prefHeight="39.0" prefWidth="193.0" promptText="Search....">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="DateAdd" layoutX="350.0" layoutY="391.0" prefHeight="31.0" prefWidth="157.0" promptText="2022-10-25">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TypeAdd" layoutX="350.0" layoutY="436.0" prefHeight="31.0" prefWidth="157.0" promptText="Supplies">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="LocationAdd" layoutX="350.0" layoutY="480.0" prefHeight="31.0" prefWidth="157.0" promptText="Skytech">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="248.0" layoutY="391.0" prefHeight="31.0" prefWidth="102.0" text="Date">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="248.0" layoutY="436.0" prefHeight="31.0" prefWidth="102.0" text="Type">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="248.0" layoutY="477.0" prefHeight="31.0" prefWidth="102.0" text="Location">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="570.0" layoutY="392.0" prefHeight="31.0" prefWidth="102.0" text="Currency">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="570.0" layoutY="436.0" prefHeight="31.0" prefWidth="102.0" text="Transaction">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="570.0" layoutY="481.0" prefHeight="31.0" prefWidth="102.0" text="Spent">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CurrencyAdd" editable="false" layoutX="672.0" layoutY="392.0" prefHeight="31.0" prefWidth="157.0" promptText="Eur...">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TransactionAdd" editable="false" layoutX="672.0" layoutY="437.0" prefHeight="31.0" prefWidth="157.0" promptText="Card">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="SpentAdd" layoutX="672.0" layoutY="481.0" prefHeight="31.0" prefWidth="157.0" promptText="100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <MenuButton layoutX="789.0" layoutY="392.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="0.0" styleClass="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#currencys" text="Eur" />
+          <MenuItem mnemonicParsing="false" onAction="#currencys" text="Usd" />
+            <MenuItem mnemonicParsing="false" onAction="#currencys" text="Gbp" />
+            <MenuItem mnemonicParsing="false" onAction="#currencys" text="Rub" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="789.0" layoutY="437.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" styleClass="MenuButton">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#transmethod" text="Cash" />
+            <MenuItem mnemonicParsing="false" onAction="#transmethod" text="Card" />
+            <MenuItem mnemonicParsing="false" onAction="#transmethod" text="Both" />
+         </items>
+      </MenuButton>
+      <Button fx:id="AddInfo" layoutX="813.0" layoutY="553.0" mnemonicParsing="false" onAction="#AddUserExpenses" prefHeight="39.0" prefWidth="108.0" styleClass="AddButton" text="Add" />
+      <Button fx:id="RemoveInfo" layoutX="696.0" layoutY="553.0" mnemonicParsing="false" onAction="#RemoveItem" prefHeight="39.0" prefWidth="108.0" styleClass="RemoveButton" text="Remove" />
+      <Button fx:id="ClearInfo" layoutX="579.0" layoutY="553.0" mnemonicParsing="false" onAction="#ClearAllTextFields" prefHeight="39.0" prefWidth="108.0" styleClass="ClearButton" text="Clear" />
+      <Label fx:id="Problem" alignment="CENTER" layoutX="228.0" layoutY="545.0" prefHeight="60.0" prefWidth="343.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="CurrentDate" layoutX="507.0" layoutY="391.0" mnemonicParsing="false" onAction="#getCurrentDate" prefHeight="31.0" prefWidth="59.0" styleClass="CurrentButton" text="Current" />
+      <Button fx:id="logbutton" layoutX="4.0" layoutY="594.0" mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="44.0" styleClass="LeftButtons" />
+      <ImageView fx:id="logimage" disable="true" fitHeight="45.0" fitWidth="55.0" layoutX="4.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="UserImage" fitHeight="98.0" fitWidth="102.0" layoutX="57.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="57.0" layoutY="597.0" prefHeight="36.0" prefWidth="84.0" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="Export" onAction="#creatingpdf" layoutX="810.0" layoutY="18.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="119.0" styleClass="ExportButton" text="Export" />
+   </children>
+</AnchorPane>

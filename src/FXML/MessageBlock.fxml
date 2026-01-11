@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="963.0" stylesheets="@../CSS/UserScenes.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLControllers.MessageController">
+   <children>
+      <Region layoutX="211.0" layoutY="13.0" prefHeight="616.0" prefWidth="738.0" styleClass="MidRegion" />
+      <Circle fill="WHITE" layoutX="108.0" layoutY="80.0" radius="66.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label fx:id="namelabel" alignment="CENTER" layoutX="6.0" layoutY="156.0" prefHeight="39.0" prefWidth="201.0" text="Welcome back admin" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Line endX="95.0" layoutX="111.0" layoutY="196.0" startX="-104.0" stroke="WHITE" strokeWidth="2.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Region layoutX="539.0" layoutY="168.0" prefHeight="91.0" prefWidth="167.0" styleClass="RegionWhite" />
+      <Region layoutX="235.0" layoutY="258.0" prefHeight="80.0" prefWidth="208.0" styleClass="RegionWhite" />
+      <Region layoutX="671.0" layoutY="542.0" prefHeight="80.0" prefWidth="267.0" styleClass="RegionWhite" />
+      <Region layoutX="253.0" layoutY="23.0" prefHeight="179.0" prefWidth="460.0" styleClass="RegionWhite" />
+      <Region layoutX="730.0" layoutY="30.0" prefHeight="233.0" prefWidth="201.0" styleClass="RegionWhite" />
+      <Region layoutX="221.0" layoutY="315.0" prefHeight="243.0" prefWidth="719.0" styleClass="RegionWhite" />
+      <Button fx:id="but1" layoutX="28.0" layoutY="213.0" mnemonicParsing="false" onAction="#enterhome" prefHeight="45.0" prefWidth="157.0" styleClass="LeftButtons" text="Home" />
+      <Button fx:id="but3" layoutX="28.0" layoutY="267.0" mnemonicParsing="false" onAction="#enteradd" prefHeight="45.0" prefWidth="157.0" styleClass="LeftButtons" text="Information" />
+      <Button layoutX="28.0" layoutY="321.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="157.0" styleClass="InsideScene" text="Messages" />
+      <TableView fx:id="table" layoutX="739.0" layoutY="43.0" prefHeight="200.0" prefWidth="183.0">
+        <columns>
+          <TableColumn fx:id="usercolumn" prefWidth="171.0" text="Users" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="231.0" layoutY="117.0" prefHeight="39.0" prefWidth="149.0" text="Message">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user" editable="false" layoutX="380.0" layoutY="36.0" prefHeight="39.0" prefWidth="174.0" promptText="User" />
+      <TextArea fx:id="message" layoutX="382.0" layoutY="97.0" prefHeight="91.0" prefWidth="313.0" promptText="Message" wrapText="true" />
+      <Label alignment="CENTER" layoutX="231.0" layoutY="36.0" prefHeight="39.0" prefWidth="149.0" text="User">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search" layoutX="246.0" layoutY="272.0" prefHeight="39.0" prefWidth="183.0" promptText="Search" />
+      <TableView fx:id="table2" layoutX="228.0" layoutY="326.0" prefHeight="223.0" prefWidth="706.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="58.0" text="ID" />
+          <TableColumn fx:id="sender" prefWidth="93.0" text="Sender" />
+            <TableColumn fx:id="message2" prefWidth="422.0" text="Message" />
+            <TableColumn fx:id="arrived" minWidth="0.0" prefWidth="129.0" text="Arrived" />
+        </columns>
+      </TableView>
+      <Button fx:id="send" layoutX="560.0" layoutY="205.0" mnemonicParsing="false" onAction="#SendMessage" prefHeight="39.0" prefWidth="123.0" styleClass="AddButton" text="Send" />
+      <Label fx:id="problem" layoutX="258.0" layoutY="205.0" prefHeight="45.0" prefWidth="281.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="count" alignment="CENTER" layoutX="642.0" layoutY="167.0" prefHeight="17.0" prefWidth="53.0" text="0/100">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="remove" layoutX="812.0" layoutY="566.0" mnemonicParsing="false" onAction="#getTheItemsToremove" prefHeight="17.0" prefWidth="114.0" styleClass="RemoveButton" text="Remove" />
+      <Button fx:id="update" layoutX="685.0" layoutY="566.0" mnemonicParsing="false" onAction="#UpdateMessages" prefHeight="17.0" prefWidth="114.0" styleClass="ClearButton" text="Update" />
+      <Label fx:id="problem2" alignment="CENTER" layoutX="228.0" layoutY="561.0" prefHeight="54.0" prefWidth="443.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="logbutton" layoutX="4.0" layoutY="594.0" mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="44.0" styleClass="LeftButtons" />
+      <ImageView fx:id="logimage" disable="true" fitHeight="45.0" fitWidth="55.0" layoutX="4.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="UserImage" fitHeight="98.0" fitWidth="102.0" layoutX="57.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="But4" layoutX="28.0" layoutY="375.0" mnemonicParsing="false" onAction="#enterterminal" prefHeight="45.0" prefWidth="157.0" styleClass="LeftButtons" text="Terminal" />
+      <Label layoutX="57.0" layoutY="597.0" prefHeight="36.0" prefWidth="84.0" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
